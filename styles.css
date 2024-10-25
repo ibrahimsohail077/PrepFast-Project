@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 110vh;
+    width: 100vw;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: #3D3D3D solid 1px;
+}
+
+#nav img {
+    height: 30px;
+    width: 30%;
+}
+
+#nav h5 {
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+}
+
+#nav i {
+    width: 30%;
+    font-size: 50px;
+    text-align: right;
+}
+
+#elems {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1, #elem2, #elem3 {
+    height: 100%;
+    width: 30%;
+}
+
+#elem2 {
+    border-left: #3D3D3D solid 2px;
+    border-right: #3D3D3D solid 2px;
+    text-align: center;
+}
+
+#elem1 #image-div, #elem3 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.4s;
+}
+
+#image-div img:hover {
+    scale: 1.4;
+}
+
+#elem1 h4, #elem3 h4 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    background-color: #1A6BBF;
+    display: inline-block;
+    padding: 10px;
+    border: solid black 3px;
+}
+
+#elem3 p, #elem1 p {
+    padding-top: 10px;
+}
+
+#elem2 h2 {
+    font-size: 80px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+#elem2 h3 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#page1 h1 {
+    font-size: 450px;
+    background-color: #FF2E2E;
+    line-height: 400px;
+    text-align: center;
+    padding-right: 100px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#main {
+    background-image: url("https://i.pinimg.com/564x/c0/1b/f3/c01bf3dd34f433e50ae38a8e4c8fc7d7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#page2 {
+    height: 150vh;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 40px;
+}
+
+#page2-left {
+    height: 100%;
+    padding-right: 50px;
+    width: 35%;
+    border-right: 1px solid #4b4b4b;
+}
+
+#page2-left h2 {
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 100;
+}
+
+#page2-left h2 span {
+    font-size: 210px;
+    font-weight: 900;
+}
+
+#page2-left img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-left p {
+    font-size: 34px;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+#page2-right {
+    height: 100%;
+    width: 70%;
+    padding: 0 60px;
+}
+
+#page2-right img {
+    height: 53%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#page2-right h1 {
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    text-decoration: line-through;
+    -webkit-text-stroke: 1px #FFDD33;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    letter-spacing: 3px;
+}
+
+#page3 {
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+#page3 h1 {
+    font-size: 520px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    background-color: #1A6BBF;
+    width: fit-content;
+    color: #010101;
+    margin-left: 2%;
+    line-height: 500px;
+    padding-right: 80px;
+    text-align: center;
+}
+
+#page3 img {
+    height: 450px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+.slide {
+    flex: 0 0 30%;
+    padding: 40px;
+    background-color: #FF2E2E;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+/* Feature Styles */
+.feature {
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature h2 {
+    font-size: 50px;
+    color: #1A6BBF;
+    margin-bottom: 20px;
+}
+
+.feature input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #1A6BBF;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.feature button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1A6BBF;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feature button:hover {
+    background-color: #0E4C8A;
+}
+
+.questionsDisplay {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    max-width: 400px; /* Limit max width for input */
+    border: 2px solid #1A6BBF; /* Primary color for borders */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 20px; /* Space between input and button */
+    font-size: 18px; /* Slightly larger text */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FF2E2E; /* Primary button color */
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d62828; /* Darker shade on hover */
+}
+
+#questionsDisplay, #resourceDisplay, #progressList, #quoteDisplay, #commentsSection, #profileDisplay, #taskList, #analyticsDisplay {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border for displays */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #f7f7f7; /* Light gray background for content area */
+    max-height: 300px; /* Max height for overflow */
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding-left: 0; /* Remove padding */
+}
+
+li {
+    background-color: #FF2E2E; /* Same color for list items */
+    color: #fff; /* White text for contrast */
+    padding: 10px;
+    margin: 10px 0; /* Space between list items */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Additional styling for different pages */
+#page6, #page10, #page11 {
+    background-color: #e9f7ef; /* Different background for tracking and management pages */
+}
+
+#page6 h2, #page10 h2, #page11 h2 {
+    color: #27ae60; /* Green color for progress and management headings */
+}
+#page4,
+#page5,
+#page6,
+#page7,
+#page8,
+#page9,
+#page10,
+#page11 {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    padding: 20px; /* Optional: Add some padding */
+    text-align: center; /* Center text */
+
+}
+#page4 h2,
+#page5 h2,
+#page6 h2,
+#page7 h2,
+#page8 h2,
+#page9 h2,
+#page10 h2,
+#page11 h2 {
+    font-size: 150px; /* Set font size for h2 elements */
+    color: #000000; /* Optional: Change color to match your theme */
+    margin-bottom: 20px; /* Optional: Add space below the heading */
+    text-align: center; /* Center align the heading text */
+    font-weight: bold; /* Optional: Make the heading bold */
+}
+
+footer {
+    width: 100%;
+    background-color: #1A6BBF; /* Footer background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add padding above and below the text */
+   
+    position: fixed; /* Position the footer at the bottom */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Set font size for the footer text */
+}

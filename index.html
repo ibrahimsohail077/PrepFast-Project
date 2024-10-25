@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <div id="nav">
+                <h5>PrepFAST HQ</h5>
+                <img src="https://cdn.prod.website-files.com/5f2429f172d117fcee10e819/5f7f87c8b81a6e7a214312f0_header.svg" alt="">
+                <i class="ri-menu-3-line"></i>
+            </div>
+            <div id="elems">
+                <div id="elem1">
+                    <div id="image-div">
+                        <img src="1img.jpg" alt="">
+                        
+                    </div>
+                    <h4>Practice Questions</h4>
+                    <p>“Unlimited practice questions generated just for you!”</p>
+                </div>
+                <div id="elem2">
+                    <h2>OUR FEATURES!</h2>
+                    <h3>"Everything You Need to Ace Your Exams"</h3>
+                    <h6>TIP! Darg sideways to navigate</h6>
+                </div>
+                <div id="elem3">
+                    <div id="image-div">
+<img src="2img.jpg" alt="">
+                        
+                    </div>
+                    <h4> Study Resources</h4>
+                        <p>“Access a treasure trove of past papers and study guides.”</p>
+                </div>
+            </div>
+            <h1>PREPFAST</h1>
+        </div>
+        <div id="page2">
+            <div id="page2-left">
+                <h2>Our Motive</h2>
+                <img src="im3.jpg" alt="">
+<p>PrepFAST is here to make exam prep easy, effective, and empowering. With AI-driven questions, progress tracking, and study resources, we’re committed to helping students overcome challenges and achieve their goals confidently and efficiently.</p>
+            </div>
+            <div id="page2-right">
+<img src="img5.jpg" alt="">
+                <h1>Empowering students to achieve exam success with confidence and ease.</h1>
+            </div>
+        </div>
+        <div id="page3">
+            <h1>Website</h1>
+            
+        </div>
+        <div class="slider">
+            <div class="slide" onclick="window.location.href='feature1.html'">Feature 1: Interactive Learning</div>
+            <div class="slide" onclick="window.location.href='feature2.html'">Feature 2: AI-Generated Practice</div>
+            <div class="slide" onclick="window.location.href='feature3.html'">Feature 3: Progress Tracking</div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div id="page4">
+            <h2>AI-Generated Practice Questions</h2>
+            <p>Enter a subject or topic to get customized questions.</p>
+            <input type="text" id="topicInput" placeholder="Enter topic">
+            <button onclick="generateQuestions()">Generate Questions</button>
+            <div id="questionsDisplay"></div>
+        </div>
+    
+        <!-- Page 5: Study Resources -->
+        <div id="page5">
+            <h2>Study Resources</h2>
+            <p>Browse past papers, notes, and study guides.</p>
+            <button onclick="showResources()">Show Resources</button>
+            <div id="resourceDisplay"></div>
+        </div>
+    
+        <!-- Page 6: Progress Tracker -->
+        <div id="page6">
+            <h2>Progress Tracker</h2>
+            <p>Track your study progress and milestones.</p>
+            <input type="text" id="milestoneInput" placeholder="Add a milestone">
+            <button onclick="addMilestone()">Add Milestone</button>
+            <ul id="progressList"></ul>
+        </div>
+    
+        <!-- Page 7: Motivation Page -->
+        <div id="page7">
+            <h2>Motivation Page</h2>
+            <button onclick="getQuote()">Get a Motivational Quote</button>
+            <div id="quoteDisplay"></div>
+        </div>
+    
+        <!-- Page 8: Discussion Forum -->
+        <div id="page8">
+            <h2>Discussion Forum</h2>
+            <input type="text" id="commentInput" placeholder="Add a comment">
+            <button onclick="addComment()">Post Comment</button>
+            <ul id="commentsSection"></ul>
+        </div>
+    
+        <!-- Page 9: Profile Page -->
+        <div id="page9">
+            <h2>Profile Page</h2>
+            <p>Your study achievements, badges, and goals.</p>
+            <button onclick="viewProfile()">View Profile</button>
+            <div id="profileDisplay"></div>
+        </div>
+    
+        <!-- Page 10: Prep Schedule Management -->
+        <div id="page10">
+            <h2>Prep Schedule Management</h2>
+            <input type="text" id="taskInput" placeholder="Add a task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    
+        <!-- Page 11: Analytics -->
+        <div id="page11">
+            <h2>Analytics</h2>
+            <p>Track your study patterns and improvement areas.</p>
+            <button onclick="showAnalytics()">View Analytics</button>
+            <div id="analyticsDisplay"></div>
+        </div>
+        <footer>
+            <p>&copy; 2024 PREPFAST. All rights reserved.</p>
+        </footer>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
